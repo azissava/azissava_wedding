@@ -16,6 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: 'upakarti';
+  src: url('/font/upakarti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
