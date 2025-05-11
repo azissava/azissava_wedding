@@ -3,10 +3,10 @@
 import { useEffect, useState } from 'react';
 
 export default function Countdown() {
-  const targetDate = new Date("2025-07-14T00:00:00");
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
+    const targetDate = new Date("2025-07-14T00:00:00");
     const timer = setInterval(() => {
       const now = new Date();
       const difference = targetDate - now;
