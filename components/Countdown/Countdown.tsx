@@ -9,7 +9,7 @@ export default function Countdown() {
     const targetDate = new Date("2025-07-14T00:00:00");
     const timer = setInterval(() => {
       const now = new Date();
-      const difference = targetDate - now;
+      const difference = targetDate.getTime() - now.getTime();
 
       if (difference <= 0) {
         clearInterval(timer);
